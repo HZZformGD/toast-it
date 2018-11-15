@@ -21,7 +21,7 @@
     
 ```
 
-show: {  
+    show: {  
       default: false  
     },
     text: {
