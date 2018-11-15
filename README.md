@@ -1,4 +1,5 @@
 # toast-it
+
 用于移动端（前提是采用了flexible适配，如果不是得自行改scss）
 
 # 用法  
@@ -7,19 +8,21 @@
     
   在main.js   
   
-  `import Toast from 'toast-it'`   
+  ``` import Toast from 'toast-it' ```   
   
-  `Vue.use(Toast)`  
+  ``` Vue.use(Toast) ```  
   
   
   
+  
+  
 
-# 属性
+# 属性 
     
-    
-    `show: {  
+```
+
+show: {  
       default: false  
-      
     },
     text: {
       default: "loading"
@@ -44,11 +47,17 @@
     },
     eventType: {
       default: "success" //  'info' 'error' 'warn
-    }`
-    
+    }
+```
+
   # 用法
-      //显示
-      `this.$toast.show(
+  
+  
+      
+      
+      
+```
+    this.$toast.show(
         {
           text: "加载成功",
           eventType: 'success',
@@ -58,6 +67,7 @@
            console.info("success", e);
           }
         }
-      );`
-      //隐藏
-      `this.$toast.hide()`
+      );
+```
+     
+``` this.$toast.hide() ```
