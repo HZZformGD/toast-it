@@ -21,7 +21,7 @@ Toast.install = (Vue, opts) => {
                 if (e) {
                     typeof opts.success == 'function'&& opts.success(e)
                 } else {
-                    typeof opts.error == 'function'&& opts.success(e)
+                    typeof opts.error == 'function'&& opts.error(e)
                 }
             })
         },
